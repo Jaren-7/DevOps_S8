@@ -4,11 +4,11 @@ trigger:
       - main
 
 variables:
-  VM_IP_PUBLICA: '52.247.8.108'  # Se debe colocar la IP pública de tu máquina virtual
-  IMAGE_NAME: 'acrgrp14s8'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
-  ACR_NAME: 'acrgrp14s8'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
-  ACR_USERNAME: 'acrgrp14s8'  # Se debe colocar el Nombre de usuario del ACR
-  ACR_PASSWORD: 'B9jG52K3D4E59EQUj5YrGwqu5ALTIgKaNCqda6Cf6juJQW5U7TE9JQQJ99CJACHrzpqEqg7NAAACAZCRTRwX'  # Se debe colocar la Contraseña del ACR
+  VM_IP_PUBLICA: '20.80.53.96'  # Se debe colocar la IP pública de tu máquina virtual
+  IMAGE_NAME: 'acrgrp14'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
+  ACR_NAME: 'acrgrp14'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
+  ACR_USERNAME: 'acrgrp14'  # Se debe colocar el Nombre de usuario del ACR
+  ACR_PASSWORD: '9WzqBk1OpxMgonEZEjHETM36kwdYVjH2Q0An525mNVLYosyjW0yuJQQJ99CIACHrzpqEqg7NAAACAZCRq7uw'  # Se debe colocar la Contraseña del ACR
 
 stages:
   - stage: Deploy
@@ -16,7 +16,7 @@ stages:
       - deployment: DeployToVM
         displayName: 'Deploy MySQL to VM'
         environment:
-          name: 'vm-eastus2'  # Nombre del entorno configurado en Azure DevOps
+          name: 'vm-northcentral'  # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine  # Especifica que se conecta a una máquina virtual
         strategy:
           runOnce:
