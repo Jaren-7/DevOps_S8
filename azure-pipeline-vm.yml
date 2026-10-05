@@ -15,7 +15,7 @@ variables:
   securityGroupName: 'NSG-Curso_DevOps'
   publicIpName: 'PublicIP-Curso_DevOps'
   vmName: 'VM-Curso_DevOps'
-  vmSize: 'Standard_B2ats_v2'  # SKU disponible en eastus2
+  vmSize: 'Standard_B2ats_v2'  # SKU disponible en northcentralus
   adminUsername: 'azureuser'
   adminPassword: 'Password1234$'  # Contraseña en texto plano (ajustar según necesidad)
 
