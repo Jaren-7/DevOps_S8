@@ -22,7 +22,7 @@ variables:
   # Variables de la imagen
   imagePublisher: 'Canonical'
   imageOffer: '0001-com-ubuntu-server-jammy'
-  imageSku: '22_04-lts-gen2'
+  imageSku: '24_04-lts-gen2'
   imageVersion: 'latest'  # Versión específica de la imagen
 
 steps:
@@ -35,7 +35,7 @@ steps:
       set -e  # Termina el script si cualquier comando falla
 
       # Asegurar que se usa la suscripción correcta
-      # az account set --subscription "bb1ccac7-d7f8-47bf-82c2-f223185cfab9"
+      # az account set --subscription "2be92d74-ce4e-4cee-a49a-fe7a2a7dfb00"
 
       # Crear un grupo de recursos
       echo "Creando grupo de recursos..."
