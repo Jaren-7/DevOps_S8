@@ -6,8 +6,8 @@ pool:
 
 variables:
   azureSubscription: 'sc-pipeline-vm' # Este es un nombre que debe cambiar al que crearon.
-  location: 'eastus2'
-  resourceGroupName: 'DEVOPS_001A_GRUPO14' # Este es un nombre que debe cambiar al que crearon.
+  location: 'northcentralus'
+  resourceGroupName: 'GRUPO_SUMATIVA3' # Este es un nombre que debe cambiar al que crearon.
   virtualNetworkName: 'VNet-Curso_DevOps'
   subnetName: 'Subnet-Curso_DevOps'
   addressPrefix: '10.0.0.0/16'
@@ -15,7 +15,7 @@ variables:
   securityGroupName: 'NSG-Curso_DevOps'
   publicIpName: 'PublicIP-Curso_DevOps'
   vmName: 'VM-Curso_DevOps'
-  vmSize: 'Standard_B2s'  # SKU disponible en eastus2
+  vmSize: 'B2ats_v2'  # SKU disponible en eastus2
   adminUsername: 'azureuser'
   adminPassword: 'Password1234$'  # Contraseña en texto plano (ajustar según necesidad)
 
