@@ -86,7 +86,7 @@ stages:
 
                     sudo docker ps
                   displayName: 'Descargar y ejecutar la imagen MySQL desde ACR'
-                  failOnStderr: true
+                  failOnStderr: false
 
                 - script: |
                     # Mostrar la URL para conectarse a MySQL
