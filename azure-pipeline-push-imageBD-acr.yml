@@ -5,14 +5,14 @@ trigger:
 
 variables:
   # Variables de entorno
-  ACR_NAME: 'myBDMySql' # Colocar el nombre de tu ACR
-  IMAGE_NAME: 'myBDMySql' # Colocar el Nombre de Imagen
-  SERVICE_CONNECTION_NAME: 'myBDMySql' # Colocar nombre del Service Connection ubicado en Docker Registry-- Azure Container Registry
+  ACR_NAME: 'acrgrp14s8' # Colocar el nombre de tu ACR
+  IMAGE_NAME: 'acrgrp14s8' # Colocar el Nombre de Imagen
+  SERVICE_CONNECTION_NAME: 'sc-pipeline-acr' # Colocar nombre del Service Connection ubicado en Docker Registry-- Azure Container Registry
 
 jobs:
   - job: BuildAndPush
     pool:
-      vmImage: 'ubuntu-latest'
+      vmImage: 'ubuntu-26.04'
     steps:
       - task: Docker@2
         inputs:
