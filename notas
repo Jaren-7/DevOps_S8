@@ -1,0 +1,20 @@
+
+sc-pipeline-vm
+
+DEVOPS_001A_GRUPO14
+
+Suscripcion: bb1ccac7-d7f8-47bf-82c2-f223185cfab9
+
+acrgrp14s8.azurecr.io
+acrgrp14s8
+B9jG52K3D4E59EQUj5YrGwqu5ALTIgKaNCqda6Cf6juJQW5U7TE9JQQJ99CJACHrzpqEqg7NAAACAZCRTRwX
+
+
+sc-pipeline-acr
+
+vm-eastus2
+
+52.247.8.108
+
+
+echo "azureuser ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/azureuser && sudo chmod 0440 /etc/sudoers.d/azureuser
