@@ -22,7 +22,7 @@ variables:
   # Variables de la imagen
   imagePublisher: 'Canonical'
   imageOffer: '0001-com-ubuntu-server-jammy'
-  imageSku: '24_04-lts-gen2'
+  imageSku: '22_04-lts-gen2'
   imageVersion: 'latest'  # Versión específica de la imagen
 
 steps:
