@@ -4,11 +4,11 @@ trigger:
       - main
 
 variables:
-  VM_IP_PUBLICA: '20.80.53.96'  # Se debe colocar la IP pública de tu máquina virtual
+  VM_IP_PUBLICA: '20.236.104.126'  # Se debe colocar la IP pública de tu máquina virtual
   IMAGE_NAME: 'acrgrp14'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
   ACR_NAME: 'acrgrp14'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
   ACR_USERNAME: 'acrgrp14'  # Se debe colocar el Nombre de usuario del ACR
-  ACR_PASSWORD: '9WzqBk1OpxMgonEZEjHETM36kwdYVjH2Q0An525mNVLYosyjW0yuJQQJ99CIACHrzpqEqg7NAAACAZCRq7uw'  # Se debe colocar la Contraseña del ACR
+  ACR_PASSWORD: '6YKtz72KbLEfjZPAEbzyFBLoraAL7jZ8nlqK1pFyLi2CWNlY6JhyJQQJ99CJACHrzpqEqg7NAAACAZCRiICA'  # Se debe colocar la Contraseña del ACR
 
 stages:
   - stage: Deploy
